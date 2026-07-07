@@ -1,6 +1,22 @@
-.env
+# Virtual Environment
 .venv/
+
+# Environment Variables
+.env
+
+# Python Cache
 __pycache__/
 *.pyc
+
+# VS Code
 .vscode/
+
+# PyCharm
 .idea/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
