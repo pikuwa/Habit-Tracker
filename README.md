@@ -1,68 +1,168 @@
 # 🚴 Pixela Habit Tracker
 
-A Python application that integrates with the Pixela API to track daily cycling distance. This project demonstrates API integration, HTTP requests, and secure credential management using environment variables.
+A Python-based habit tracking application that records daily cycling distance using the Pixela API. The application allows users to log their daily activity, securely manage API credentials with environment variables, and visualize progress through an interactive graph.
 
-## Features
+---
 
-* Create a Pixela user account
-* Create a cycling graph
-* Add daily cycling records
-* Update existing records
-* Delete records
-* Store API credentials securely using `.env`
+## 📌 Features
 
-## Technologies Used
+- 🚴 Record daily cycling distance
+- 📊 Automatically update the Pixela graph
+- 🔒 Secure API credentials using `.env`
+- ⚠️ Exception handling for API requests
+- 🧹 Clean and modular Python code
+- 💻 Easy-to-use Command Line Interface (CLI)
 
-* Python
-* Requests
-* python-dotenv
-* Pixela API
+---
 
-## Installation
+## 🛠️ Built With
 
-1. Clone the repository:
+- Python 3
+- Requests
+- python-dotenv
+- Pixela REST API
 
-   ```bash
-   git clone https://github.com/pikuwa/Pixela-Habit-Tracker.git
-   ```
+---
 
-2. Navigate to the project:
-
-   ```bash
-   cd Pixela-Habit-Tracker
-   ```
-
-3. Install the dependencies:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-4. Create a `.env` file using `.env.example` and add your Pixela credentials:
-
-   ```env
-   TOKEN=your_token
-   USERNAME=your_username
-   GRAPH_ID=your_graph_id
-   ```
-
-5. Run the project:
-
-   ```bash
-   python main.py
-   ```
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 Pixela-Habit-Tracker/
-│── main.py
-│── requirements.txt
-│── .env.example
-│── .gitignore
+│
+├── Screenshots/
+│   ├── graph.png
+│   └── terminal-success.png
+│
+├── main.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
 └── README.md
 ```
 
-## Note
+---
 
-The `.env` file is excluded from Git using `.gitignore`, ensuring that sensitive information such as API tokens is not uploaded to GitHub.
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/pikuwa/Pixela-Habit-Tracker.git
+```
+
+### 2️⃣ Navigate to the project
+
+```bash
+cd Pixela-Habit-Tracker
+```
+
+### 3️⃣ Create a virtual environment
+
+```bash
+python -m venv .venv
+```
+
+### 4️⃣ Activate the virtual environment
+
+**Windows**
+
+```bash
+.venv\Scripts\activate
+```
+
+**Linux / macOS**
+
+```bash
+source .venv/bin/activate
+```
+
+### 5️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Environment Variables
+
+Create a `.env` file in the project root.
+
+```env
+TOKEN=your_pixela_token
+USERNAME=your_username
+GRAPH_ID=your_graph_id
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+Example Output
+
+```text
+🚴 Enter today's cycling distance (in Km): 10
+
+✅ Cycling record added successfully!
+📅 Date      : 07/07/2026
+🚴 Distance  : 10 Km
+```
+
+---
+
+## 📸 Screenshots
+
+### Graph
+
+> Replace with your actual screenshot.
+
+![Pixela Graph](Screenshots/graph.png)
+
+---
+
+### Terminal Output
+
+> Replace with your actual screenshot.
+
+![Terminal Output](Screenshots/terminal_success.png)
+
+---
+
+## 📈 API Used
+
+Pixela REST API
+
+- Create User
+- Create Graph
+- Add Pixel
+- Update Pixel
+- Delete Pixel
+
+---
+
+## 💡 Future Improvements
+
+- Update existing records
+- Delete records
+- Multiple activity tracking
+- Weekly & monthly analytics
+- GUI using Tkinter or Streamlit
+
+---
+
+## 👨‍💻 Author
+
+**Pratik Kumar Prajapati**
+
+- GitHub: https://github.com/pikuwa
+- LinkedIn: *(Add your LinkedIn profile here)*
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a ⭐ on GitHub.
